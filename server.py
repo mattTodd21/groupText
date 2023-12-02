@@ -26,7 +26,7 @@ class ServerApp:
         self.exit_button.pack(padx=20, pady=5, side=tk.RIGHT)
 
         self.server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.server_sock.bind(('', 8080))
+        self.server_sock.bind(('', 8080))                        # input your ip address and socket you would like to use
         self.server_sock.listen()
         self.log_message("Server listening on port 8080...")
 
