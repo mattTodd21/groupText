@@ -29,7 +29,7 @@ class ClientApp:
         threading.Thread(target=self.connect_to_server).start()
 
     def connect_to_server(self):
-        self.client_sock.connect(('127.0.0.1', 8080))
+        self.client_sock.connect(('127.0.0.1', 8080))                    # input your ip address and socket you would like to use
         threading.Thread(target=self.receive_message).start()
 
     def log_message(self, message):
